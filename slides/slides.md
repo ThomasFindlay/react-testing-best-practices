@@ -68,20 +68,34 @@ h1 {
 layout: section
 ---
 
-# What is Testing and why is it important?
+# Why should we write tests?
 
+---
+---
+# Why should we write tests?
+
+- Manual testing is time consuming and prone to human error.
+- We can run automated tests as many times as we want.
+- Tests can help find and fix bugs before they are shipped to the users.
+- It's easy to break things. A good test suite makes it easier to refactor application, as tests will help to detect any regressions.
+- Tests can serve as a code documentation.
 
 ---
 layout: section
 ---
-# Unit tests with Vitest and React Testing Library
+# Unit tests with Jest and React Testing Library
 
 ---
 ---
 
-# Pros and cons of unit tests
+# Unit Testing Tips
 
-- Tests components in isolation
+- Test components in isolation.
+- Mock API requests and any side-effects.
+- Avoid shallow mounting - the speed trade-off just isn't worth it.
+- Query elements just like a user would. Don't query by classes or ids. Tests should not be another consumer of your application.
+- Avoid testing implementation details.
+- Don't test third-party libraries.
 
 ---
 layout: section
@@ -91,56 +105,69 @@ layout: section
 ---
 ---
 
-# Pros and const of e2e tests
+# E2E Testing Tips
+
+- Avoid mocking API requests. E2E tests should test whether client and server work together in cohesion.
+- 100% coverage shouldn't always be a must. Otherwise, you might start testing implementation details or try to test for near-impossible scenarios.
+- Don't test happy paths only. Test *Pending*, *Error* and *Empty states* too.
+- Re-use authentication logic to speed up your tests.
 
 ---
 ---
 # Summary
 
+- Automated tests can save a lot of time and reduce likeliness of shipping buggy software.
+- Setup a CI/CD pipeline that automatically runs tests.
+- You can also run tests automatically locally with Husky.
+- Mock API requests in unit but not e2e tests.
+- Don't make tests another consumer of your app.
+- Tests should be maintained just like the production code.
+
 ---
 ---
-# The End
 
+# That's it
 
-- Twitter <br />
-  https://twitter.com/thomasfindlay94
-
-- LinkedIn <br />
-  https://www.linkedin.com/in/thomas-findlay/
-
-- Codementor <br />
-  https://www.codementor.io/@thomas478
-
-- The Road To Enterprise <br />
-  https://theroadtoenterprise.com/blog
-
-<div class="mt-8">
-  <div class="mb-2">Full code examples:</div>
-  <a class="leading-relaxed" target="_blank" rel="noreferrer" href="https://github.com/ThomasFindlay/react-advanced-london-managing-apis">https://github.com/ThomasFindlay/react-advanced-london-managing-apis</a>
-</div>
-<div class="mt-3">
-  <div class="mb-2">Slides:</div>
-  <a class="leading-relaxed" target="_blank" rel="noreferrer" href="https://react-advanced-london-slides.vercel.app/">https://react-advanced-london-slides.vercel.app/</a>
-</div>
-
-::right::
-
-<div class="right-col mt-16">
-  <span class="block mb-4"><span class="font-bold">React - The Road To Enterprise</span> (Coming Dec 2021)</span> 
-  <span>Special gift for conference attendees</span>
-
-  <span>35% OFF with code **REACTADVANCED**</span>
-
-  <div class="flex items-center gap-4">
-    <img class="w-48" src="/react-book-cover.png" />
-    <img className="w-48 mt-4" src="/react-qrcode.png" />
+<div class="flex justify-between">
+  <div>
+    <h2 class="font-bold block mb-4">React - The Road To Enterprise</h2>
+    <span class="mt-4 mb-4 text-purple-800 block">The Advanced React Book</span>
+    <div class="flex items-start gap-4">
+      <img class="w-42" src="/react-book-cover.png" />
+      <div>
+        <ul class="!mt-0 text-sm">
+          <li class="">Local & Global State Management Patterns</li>
+          <li class="">Scalable Project Architecture</li>
+          <li class="">Performance Optimisation</li>
+          <li class="">API handling with API Layer and React Query</li>
+          <li class="">Advanced Component Patterns</li>
+          <li class="">Testing & Security</li>
+          <li class="">SSG, SSR and ISR with Next.js</li>
+          <li class="">and much more!</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-purple-100 mt-4 p-4 rounded-lg">
+      <a class="text-sm inline-block no-underline !border-none text-purple-700" href="https://theroadtoenterprise.com/books/react-the-road-to-enterprise" target="_blank">
+        https://theroadtoenterprise.com/books/react-the-road-to-enterprise
+      </a>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h2 class="font-bold block">Get in Touch</h2>
+      <ul class="p-4 rounded-2xl text-sm space-y-3 pl-0">
+        <li class="list-none !ml-0"><span class="text-purple-700">The Road To Enterprise</span> <br />
+          <a class="!border-none" href="https://theroadtoenterprise.com" target="_blank">https://theroadtoenterprise.com</a></li>
+        <li class="list-none !ml-0">
+          <span class="text-purple-700">Twitter</span> <br />
+          <a class="!border-none" href="https://twitter.com/thomasfindlay94" target="_blank">https://twitter.com/thomasfindlay94</a></li>
+        <li class="list-none !ml-0">
+          <span class="text-purple-700">LinkedIn</span> <br />
+          <a class="!border-none" href="https://www.linkedin.com/in/thomas-findlay/" target="_blank">https://www.linkedin.com/in/thomas-findlay/</a></li>
+        <li class="list-none !ml-0"><span class="text-purple-700">Codementor</span> <br />
+          <a class="!border-none" href="https://www.codementor.io/@thomas478" target="_blank">https://www.codementor.io/@thomas478</a></li>
+      </ul>
+    </div>
   </div>
 </div>
-
-<!-- Pre-order and get 35% OFF with code  -->
-<!-- __REACTADVANCED__ -->
-<style>
-  .right-col {
-    @apply float-right
-  }
-</style>
