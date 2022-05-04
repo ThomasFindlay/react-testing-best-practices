@@ -180,7 +180,8 @@ layout: section
   <div>
     <div>
       <h2 class="font-bold block">Get in Touch</h2>
-      <ul class="p-4 rounded-2xl text-sm space-y-3 pl-0">       
+      <ul class="p-4 rounded-2xl text-sm space-y-3 pl-0">  
+            <li class="list-none !ml-0"> 
         <span class="text-purple-700">Twitter</span> <br />
           <a class="!border-none" href="https://twitter.com/thomasfindlay94" target="_blank">https://twitter.com/thomasfindlay94</a></li>
         <li class="list-none !ml-0">
@@ -189,8 +190,7 @@ layout: section
         <li class="list-none !ml-0"><span class="text-purple-700">Codementor</span> <br />
           <a class="!border-none" href="https://www.codementor.io/@thomas478" target="_blank">https://www.codementor.io/@thomas478</a></li>
            <li class="list-none !ml-0"><span class="text-purple-700">The Road To Enterprise</span> <br />
-          <a class="!border-none" href="https://theroadtoenterprise.com" target="_blank">https://theroadtoenterprise.com</a></li>
-        <li class="list-none !ml-0">
+          <a class="!border-none" href="https://theroadtoenterprise.com" target="_blank">https://theroadtoenterprise.com</a></li>   
       </ul>
     </div>
   </div>
