@@ -30,7 +30,6 @@ interface RenderSelectProps
   extends Omit<SelectProps, 'id' | 'options' | 'onChange'> {
   id?: string | number
   options?: OptionsValue[]
-  onChange?: (item: OptionsValue) => void
 }
 
 const SelectWrapper = (props?: RenderSelectProps) => {

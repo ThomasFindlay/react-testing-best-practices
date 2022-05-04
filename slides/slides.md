@@ -81,6 +81,21 @@ layout: section
 - Tests can serve as a code documentation.
 
 ---
+---
+
+# Test types
+
+- Unit
+- Integration
+- Functional
+- End to End
+- Performance
+- Acceptance
+- Accessibility
+- Stress
+- Smoke
+
+---
 layout: section
 ---
 # Unit tests with Jest and React Testing Library
@@ -122,6 +137,16 @@ layout: section
 - Mock API requests in unit but not e2e tests.
 - Tests should be maintained just like the production code.
 
+<div class="fixed bottom-16">
+  Code Examples & Slides
+ <div class="bg-purple-100 mt-4 p-4 rounded-lg">
+  <a class="text-sm inline-block no-underline !border-none text-purple-700" href="https://theroadtoenterprise.com/books/react-the-road-to-enterprise" target="_blank">
+    https://github.com/ThomasFindlay/react-testing-best-practices
+  </a>
+</div>
+</div>
+
+
 ---
 ---
 
@@ -155,17 +180,17 @@ layout: section
   <div>
     <div>
       <h2 class="font-bold block">Get in Touch</h2>
-      <ul class="p-4 rounded-2xl text-sm space-y-3 pl-0">
-        <li class="list-none !ml-0"><span class="text-purple-700">The Road To Enterprise</span> <br />
-          <a class="!border-none" href="https://theroadtoenterprise.com" target="_blank">https://theroadtoenterprise.com</a></li>
-        <li class="list-none !ml-0">
-          <span class="text-purple-700">Twitter</span> <br />
+      <ul class="p-4 rounded-2xl text-sm space-y-3 pl-0">       
+        <span class="text-purple-700">Twitter</span> <br />
           <a class="!border-none" href="https://twitter.com/thomasfindlay94" target="_blank">https://twitter.com/thomasfindlay94</a></li>
         <li class="list-none !ml-0">
           <span class="text-purple-700">LinkedIn</span> <br />
           <a class="!border-none" href="https://www.linkedin.com/in/thomas-findlay/" target="_blank">https://www.linkedin.com/in/thomas-findlay/</a></li>
         <li class="list-none !ml-0"><span class="text-purple-700">Codementor</span> <br />
           <a class="!border-none" href="https://www.codementor.io/@thomas478" target="_blank">https://www.codementor.io/@thomas478</a></li>
+           <li class="list-none !ml-0"><span class="text-purple-700">The Road To Enterprise</span> <br />
+          <a class="!border-none" href="https://theroadtoenterprise.com" target="_blank">https://theroadtoenterprise.com</a></li>
+        <li class="list-none !ml-0">
       </ul>
     </div>
   </div>
