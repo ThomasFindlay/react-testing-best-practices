@@ -120,7 +120,6 @@ layout: section
 - Setup a CI/CD pipeline that automatically runs tests.
 - You can also run tests automatically locally with Husky.
 - Mock API requests in unit but not e2e tests.
-- Don't make tests another consumer of your app.
 - Tests should be maintained just like the production code.
 
 ---
